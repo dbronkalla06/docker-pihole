@@ -1,4 +1,5 @@
-FROM debian:buster-slim
+#FROM debian:buster-slim
+FROM debian:buster-20220527-slim
 
 # Build time environment
 ARG TARGETPLATFORM
