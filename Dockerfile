@@ -21,6 +21,7 @@ COPY Dockerfile.sh /
 COPY root/         /
 RUN touch          /.dockerenv
 
+
 # Hard to track down issue: COPY uses the file permissions from the working dir,
 # which ought to be 0755... but when they're 0700, we see strange errors about
 # hostname lookups failing. Git only tracks the executable bit, not read/write.
